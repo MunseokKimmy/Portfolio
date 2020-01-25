@@ -68,11 +68,6 @@ ol, ul, h2, p{
   margin-bottom: 40px;
   color: #fff;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .menu-container {
   color: #fff;
@@ -139,9 +134,34 @@ h2 {
 .ever a:active {
   background: #11d49e;
 }
+
 @media only screen and (max-width: 400px) {
-  body {
-    background-color: #86BBD8;
+  .header {
+    /*width: 900px;*/
+    height: 140px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;  /* Add this */
+  }
+  .ever {
+    float: left;
+    border-right: 1px solid #a9a9a9;
+  }
+  .ever a {
+    display: block;
+    color: #F6AE2D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: .75em;
+  }
+  .social {
+    display: none;
+  }
+  br {
+    display: none;
   }
 }
 
